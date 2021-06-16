@@ -50,11 +50,12 @@ public class PurchaseItemsOnSecretSauce {
 	    pom.checkoutPage.fillInputFieldsWithJunkData();
 	    pom.checkoutPage.navigateToCheckoutOverview();
 	    pom.checkoutOverviewViewPage.completeTransaction();
-	    this.didOrderCompleteActual = pom.checkoutCompletePage.didOrderComplete();
 	}
 	
 	@Then("the purchase is verified via a confirmation page")
 	public void thePurchaseIsVerifiedViaAConfirmationPage() {
+	    this.didOrderCompleteActual = pom.checkoutCompletePage.didOrderComplete();
+
 	    assertEquals(didOrderCompleteExpected, didOrderCompleteActual);
 	}
 	
