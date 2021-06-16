@@ -1,0 +1,116 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-16T14:15:25.465Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1758576700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qa.examples.cucumber_base.hooks.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Purchase items and verify the purchase",
+        "description": "",
+        "id": "purchase-items-on-secret-sauce;purchase-items-and-verify-the-purchase",
+        "after": [
+          {
+            "result": {
+              "duration": 911288800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qa.examples.cucumber_base.hooks.Hooks.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 835998700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user standard_user with the password secret_sauce is logged in",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 9
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 41
+                }
+              ],
+              "location": "com.qa.examples.cucumber_base.step_definitions.PurchaseItemsOnSecretSauce.theUserStandardUserWithThePasswordSecretSauce(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 707999000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user adds the following items to the cart",
+            "match": {
+              "location": "com.qa.examples.cucumber_base.step_definitions.PurchaseItemsOnSecretSauce.theUserAddsTheFollowingItemsToTheCart(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Sauce Labs Backpack"
+                ]
+              },
+              {
+                "cells": [
+                  "Sauce Labs Bike Light"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 495018400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user checks out the items",
+            "match": {
+              "location": "com.qa.examples.cucumber_base.step_definitions.PurchaseItemsOnSecretSauce.theUserChecksOutTheItems()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1003400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the purchase is verified via a confirmation page",
+            "match": {
+              "location": "com.qa.examples.cucumber_base.step_definitions.PurchaseItemsOnSecretSauce.thePurchaseIsVerifiedViaAConfirmationPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Purchase items on secret sauce",
+    "description": "",
+    "id": "purchase-items-on-secret-sauce",
+    "keyword": "Feature",
+    "uri": "classpath:features/purchase_items_on_secret_sauce.feature",
+    "tags": []
+  }
+]

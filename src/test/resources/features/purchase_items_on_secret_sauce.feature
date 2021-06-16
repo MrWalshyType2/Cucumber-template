@@ -1,6 +1,6 @@
 Feature: Purchase items on secret sauce
 
-  Scenario Outline: Purchase items and verify the purchase
+  Scenario: Purchase items and verify the purchase
     Given the user standard_user with the password secret_sauce is logged in
     When the user adds the following items to the cart
 			| Sauce Labs Backpack	|
